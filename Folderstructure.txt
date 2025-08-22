@@ -1,0 +1,29 @@
+platform/
+├── public/
+│   ├── logo.png
+│   └── logo.svg
+├── pages/
+│   ├── index.html
+│   ├── chemistry.html
+│   ├── ai-tools.html
+│   ├── media.html
+│   ├── learning.html
+│   ├── storefront.html
+│   ├── admin.html
+├── scripts/
+│   ├── chemistry-calc.js
+│   └── api-client.js
+├── styles/
+│   └── style.css
+├── server/
+│   ├── index.js
+│   ├── routes.js
+├── expo-app/
+│   ├── App.js
+│   ├── app.json
+│   └── package.json
+├── manifest.json
+├── service-worker.js
+├── README.md
+├── package.json
+└── .gitignore

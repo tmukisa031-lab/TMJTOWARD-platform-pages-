@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chemistry Calculator - TitusMukisaMJToward</title>
+  <link rel="stylesheet" href="../styles/main.css" />
+</head>
+<body>
+  <header>
+    <h1>Chemistry Calculator</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="ai-tools.html">AI Tools</a></li>
+        <li><a href="media.html">Media Center</a></li>
+        <li><a href="learning.html">Learning Hub</a></li>
+        <li><a href="storefront.html">Storefront</a></li>
+        <li><a href="admin.html">Admin Dashboard</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <label for="calculationType">Select Calculation Type:</label>
+    <select id="calculationType">
+      <option value="molarMass">Molar Mass</option>
+      <option value="moles">Moles from Mass</option>
+      <option value="mass">Mass from Moles</option>
+      <option value="ph">pH Calculation</option>
+    </select>
+    <label for="inputExpression">Enter Input (e.g., 500g of NaCl or H2SO4):</label>
+    <input type="text" id="inputExpression" placeholder="Type a chemical expression..." />
+    <button onclick="calculate()">Calculate</button>
+    <div id="result"></div>
+  </main>
+  <footer>
+    <p>© 2025 TitusMukisaMJToward | Email: tmukisa031@gmail.com | +256702802338</p>
+  </footer>
+  <script>
+    function calculate() {
+      const input = document.getElementById("inputExpression").value.trim();
+      const type = document.getElementById("calculationType").value;
+      const resultBox = document.getElementById("result");
+      if (!input) {
+        resultBox.innerText = "Please enter a valid input.";
+        return;
+      }
+
+      // Simple demo logic
+      if (type === "molarMass") {
+        if (/NaCl/i.test(input)) {
+          resultBox.innerText = "Molar Mass of NaCl is 58.44 g/mol";
+        } else if (/H2O/i.test(input)) {
+          resultBox.innerText = "Molar Mass of H2O is 18.015 g/mol";
+        } else {
+          resultBox.innerText = `Molar mass calculation for "${input}" is not supported yet.`;
+        }
+      } else {
+        resultBox.innerText = `Calculation type "${type}" is under development.`;
+      }
+    }
+  </script>
+</body>
+</html>

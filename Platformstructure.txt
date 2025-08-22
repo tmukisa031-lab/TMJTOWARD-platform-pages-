@@ -1,0 +1,9 @@
+platform/
+ ├── app/
+ │   ├── page.js
+ │   └── layout.js
+ ├── public/
+ │   └── favicon.ico
+ ├── package.json
+ ├── .gitignore
+ ├── README.md

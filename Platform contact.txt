@@ -1,0 +1,41 @@
+---
+
+## 2. `public/` folder
+
+---
+
+### `public/favicon.ico`
+
+*(You’ll need to add your own or use any favicon generator to create one. For now, you can use a simple blue 'T' icon or download any free favicon.)*
+
+---
+
+### `public/logo-placeholder.png`
+
+*(Placeholder logo — I can generate and share a simple PNG or SVG if you want, otherwise use any placeholder image with brand name.)*
+
+---
+
+### `public/manifest.json`
+
+```json
+{
+"name": "TitusMukisaMJToward Platform",
+"short_name": "TMJMT Platform",
+"start_url": "/pages/index.html",
+"display": "standalone",
+"background_color": "#001F3F",
+"theme_color": "#001F3F",
+"icons": [
+{
+"src": "/public/logo-placeholder.png",
+"sizes": "192x192",
+"type": "image/png"
+},
+{
+"src": "/public/logo-placeholder.png",
+"sizes": "512x512",
+"type": "image/png"
+}
+]
+}
