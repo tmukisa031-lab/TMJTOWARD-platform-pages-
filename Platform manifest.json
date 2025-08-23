@@ -1,0 +1,21 @@
+{
+  "name": "TitusMukisaMJToward Platform",
+  "short_name": "TMJToward",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1a73e8",
+  "description": "A multifunctional digital hub for learning, library, FM, chemistry calculator, TV, and games.",
+  "icons": [
+    {
+      "src": "/icons/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

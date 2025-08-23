@@ -1,0 +1,15 @@
+{
+  "name": "TitusMukisaMJToward Platform",
+  "description": "All-in-one platform with TV, Library, FM, Learning Hub, and Chemistry Calculator.",
+  "repository": "https://github.com/YourUsername/platform-repo",
+  "keywords": ["learning", "library", "calculator", "AI", "platform"],
+  "env": {
+    "NODE_ENV": {
+      "description": "Set to production by default",
+      "value": "production"
+    }
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
